@@ -1,5 +1,7 @@
 const {readFile, writeFile} = require('fs');
 console.log('start');
+
+// offload this task in async function
 readFile('./content/first.txt', 'utf-8', (err, result) => {
        if(err) {
               console.log(err);
